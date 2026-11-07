@@ -1,5 +1,11 @@
 # Getting Started with Create React App
 
+기동어
+DB
+npm run db
+메인
+npm start
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

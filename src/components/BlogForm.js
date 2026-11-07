@@ -14,7 +14,7 @@ const BlogForm = ({ editing }) => {
     const [ originalBody, setoriginalBody ] = useState('');
     const [ publish, setPublish ] = useState(false); 
     const [ originalPublish, setoriginalPublish ] = useState(false); 
-
+ 
     useEffect(() => {
       if (editing) {
         axios.get(`http://localhost:3001/posts/${id}`).then(res => {

@@ -1,5 +1,6 @@
 import HomePage from './Page/HomePage'
 import ListPage from './Page/ListPage'
+import AdminPage from './Page/AdminPage'
 import CreatePage from './Page/CreatePage'
 import EditPage from './Page/EditPage'
 import ShowPage from './Page/ShowPage'
@@ -12,6 +13,10 @@ const routers = [
   {
     path:'/blogs',
     component: ListPage
+  },
+  {
+    path:'/Admin',
+    component: AdminPage
   },
   {
     path:'/blogs/create',
