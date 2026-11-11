@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { useHistory } from "react-router-dom/cjs/react-router-dom";
 import LoadingSpinner from "../components/LoadingSpinner";
 import { bool } from "prop-types";
+import Pagination from "./Pagination";
 
 const BlogList = ( {isAdmin} ) => {
   const history = useHistory();
@@ -38,9 +39,8 @@ const BlogList = ( {isAdmin} ) => {
   if(posts.length === 0) {
     return (<div>No blog posts found</div>)
   }
-
-
-  return posts.filter(post => {
+  const renderBlogList = () => {
+    return posts.filter(post => {
       return isAdmin || post.publish
   }).map(post => {
       return (
@@ -58,6 +58,14 @@ const BlogList = ( {isAdmin} ) => {
         </Card>
       )
     })
+  }
+
+  return (
+    <div>
+      {renderBlogList()}
+      <Pagination />
+    </div>
+  )
 }
 
 BlogList.propTypes = {
