@@ -1,24 +1,6 @@
 {
   "posts": [
     {
-      "title": "11 new22 new 33",
-      "body": "11 new22 new 33",
-      "id": 1,
-      "publish": true
-    },
-    {
-      "title": "new",
-      "body": "newbody",
-      "createdAt": 1788420695602,
-      "id": 6
-    },
-    {
-      "title": "new 1",
-      "body": "new1",
-      "createdAt": 1788757733692,
-      "id": 7
-    },
-    {
       "title": "신규1",
       "body": "신규1",
       "publish": true,
@@ -28,7 +10,7 @@
     {
       "title": "신규 미체크",
       "body": "신규 미체크",
-      "publish": false,
+      "publish": true,
       "createdAt": 1788764354754,
       "id": 9
     },
@@ -49,9 +31,65 @@
     {
       "title": "new8",
       "body": "new8",
-      "publish": false,
+      "publish": true,
       "createdAt": 1794040148259,
       "id": 12
+    },
+    {
+      "title": "11",
+      "body": "11",
+      "publish": true,
+      "createdAt": 1794409201479,
+      "id": 13
+    },
+    {
+      "title": "22",
+      "body": "22",
+      "publish": true,
+      "createdAt": 1794409205868,
+      "id": 14
+    },
+    {
+      "title": "12",
+      "body": "12",
+      "publish": true,
+      "createdAt": 1794409210077,
+      "id": 15
+    },
+    {
+      "title": "13",
+      "body": "13",
+      "publish": true,
+      "createdAt": 1794409214527,
+      "id": 16
+    },
+    {
+      "title": "14",
+      "body": "14",
+      "publish": true,
+      "createdAt": 1794409218597,
+      "id": 17
+    },
+    {
+      "title": "15",
+      "body": "15",
+      "publish": true,
+      "createdAt": 1794409224521,
+      "id": 18
+    },
+    {
+      "title": "16",
+      "body": "16",
+      "publish": true,
+      "createdAt": 1794409240219,
+      "id": 19
+    },
+    {
+      "title": "17",
+      "body": "17",
+      "publish": true,
+      "createdAt": 1794409247412,
+      "id": 20
     }
   ],
   "comments": [],

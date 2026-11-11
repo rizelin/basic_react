@@ -12,8 +12,8 @@ const BlogList = ( {isAdmin} ) => {
   const [posts, setPosts] = useState([])
   const [loading, setLoaging] = useState(true);
 
-  const getPosts = () => {
-    axios.get('http://localhost:3001/posts').then((res)=> {
+  const getPosts = (page = 1) => {
+    axios.get(`http://localhost:3001/posts?_page=${page}&_limit=5&_sort=id&_order=desc`).then((res)=> {
       setPosts(res.data)
       setLoaging(false);
     })
