@@ -11,8 +11,10 @@ const BlogList = ( {isAdmin} ) => {
   const history = useHistory();
   const [posts, setPosts] = useState([])
   const [loading, setLoaging] = useState(true);
+  const [currentPage, setCurrentPage] = useState(1);
 
   const getPosts = (page = 1) => {
+    setCurrentPage(page);
     let params = {
       _page: page,
       _limit: 5,
@@ -76,7 +78,11 @@ const BlogList = ( {isAdmin} ) => {
   return (
     <div>
       {renderBlogList()}
-      <Pagination currentPage={3} numberOfPages={5}/>
+      <Pagination
+        currentPage={currentPage}
+        numberOfPages={3}
+        onClick={getPosts}
+      />
     </div>
   )
 }
