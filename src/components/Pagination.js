@@ -1,6 +1,7 @@
 import propTypes from "prop-types";
 
-const Pagination = ({ currentPage = 1, numberOfPages, onClick, limit }) => {
+const Pagination = ({ currentPage = 1, numberOfPages, onClick }) => {
+  const limit = 5 
   const currentSet = Math.ceil(currentPage/limit);
   const lastSet = Math.ceil(numberOfPages/limit);
   const startPage = limit * (currentSet - 1) + 1;
